@@ -32,7 +32,7 @@
 	
 </head>
 <body>
-<div id="container">
+<div id="container" >
 
 <div id="header">
 <div id="headerTitle">
@@ -42,107 +42,11 @@
 </div>
 </div>
 
-<div id="body">
+<div id="body" style="position: absolute;left:100px">
 
-	<div id="sidebar">
-							<div id="rightSidebar">
-				<div class="block" id="sidebarDevelopedBy">
-	<a class="blockTitle" href="http://pkp.sfu.ca/ocs/" id="developedBy">Open Conference Systems</a>
-</div>	<div class="block" id="sidebarHelp">
-	<a class="blockTitle" href="javascript:openHelp(&#39;https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/help/view/user/topic/000005&#39;)">Conference Help</a>
-</div><div class="block" id="sidebarUser">
-	<span class="blockTitle">User</span>
-			<form method="post" action="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/login/signIn">
-			<table>
-				<tbody><tr>
-					<td><label for="sidebar-username">Username</label></td>
-					<td><input type="text" id="sidebar-username" name="username" value="" size="12" maxlength="32" class="textField"></td>
-				</tr>
-				<tr>
-					<td><label for="sidebar-password">Password</label></td>
-					<td><input type="password" id="sidebar-password" name="password" value="" size="12" maxlength="32" class="textField"></td>
-				</tr>
-				<tr>
-					<td colspan="2"><input type="checkbox" id="remember" name="remember" value="1"> <label for="remember">Remember me</label></td>
-				</tr>
-				<tr>
-					<td colspan="2"><input type="submit" value="Log In" class="button"></td>
-				</tr>
-			</tbody></table>
-		</form>
-	</div><div class="block" id="notification">
-	<span class="blockTitle">Notifications</span>
-	<ul>
-					<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/notification">View</a></li>
-			<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/notification/subscribeMailList">Subscribe</a> / <a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/notification/unsubscribeMailList">Unsubscribe</a></li>	
-			</ul>
-</div>	
-	<div class="block" id="sidebarNavigation">
-		<span class="blockTitle">Conference Content</span>
-		
-		<span class="blockSubtitle">Search</span>
-		<form method="post" action="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/search/results">
-		<table>
-		<tbody><tr>
-			<td><input type="text" id="query" name="query" size="15" maxlength="255" value="" class="textField"></td>
-		</tr>
-		<tr>
-			<td><select name="searchField" size="1" class="selectMenu">
-				<option label="All" value="">All</option>
-<option label="Authors" value="1">Authors</option>
-<option label="Title" value="2">Title</option>
-<option label="Abstract" value="4">Abstract</option>
-<option label="Index terms" value="120">Index terms</option>
-<option label="Full Text" value="128">Full Text</option>
-
-			</select></td>
-		</tr>
-		<tr>
-			<td><input type="submit" value="Search" class="button"></td>
-		</tr>
-		</tbody></table>
-		</form>
-		
-		<br>
-	
-		
-				<span class="blockSubtitle">Browse</span>
-		<ul>
-			<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/search/schedConfs">By Conference</a></li>
-			<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/search/authors">By Author</a></li>
-			<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/search/titles">By Title</a></li>
-					</ul>
-			</div>
-<div class="block" id="sidebarFontSize" style="margin-bottom: 4px;">
-	<span class="blockTitle">Font Size</span>
-	<div id="sizer"><a href="javascript:void(0);" class="smallFont" title="Make font size smaller">Make font size smaller</a> <a href="javascript:void(0);" class="defaultFont" title="Make font size default">Make font size default</a> <a href="javascript:void(0);" class="largeFont" title="Make font size larger">Make font size larger</a> </div>
-</div>
-<br>
-<div class="block" id="sidebarInformation">
-	<span class="blockTitle">Information</span>
-	<ul>
-		<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/information/readers">For Readers</a></li>		<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/information/authors">For Authors</a></li>	</ul>
-</div>
-
-			</div>
-			</div>
 
 <div id="main">
-<div id="navbar">
-	<ul class="menu">
-		<li><a href="https://parsec.unicampania.it/workshops/index.php/index/index/index/index">Home</a></li>
-		<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/about">About</a></li>
-					<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/login">Log In</a></li>
-			<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/user/account">Account</a></li>
-				<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/search">Search</a></li>
 
-								<li><a href="https://parsec.unicampania.it/workshops/index.php/dhdw/index/schedConfs/archive">Archive</a></li>						
-					</ul>
-</div>
-<div id="breadcrumb">
-	<a href="https://parsec.unicampania.it/workshops/index.php/index/index/index">Home</a> &gt;
-			<a href="https://parsec.unicampania.it/workshops/index.php/dhdw/index/index" class="hierarchyLink">International Workshop on Digital Humanities and Digital World (DHDW)</a> &gt;
-			<a href="https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/index" class="current">2nd International Workshop on Digital Humanities and Digital World (DHDW)</a></div>
 <h2>2nd International Workshop on Digital Humanities and Digital World (DHDW)</h2>
 
 
@@ -169,5 +73,4 @@
 
 
 </div><!-- container -->
-
 </body></html>
