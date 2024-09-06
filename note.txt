@@ -1,6 +1,7 @@
 RewriteRule ^/workshops/index.php/dhdw/dhdw23 https://25sal.github.io/dhdw/dhdw3.html
 RewriteRule ^/workshops/index.php/dhdw/dhdw24 https://25sal.github.io/dhdw/dhdw2html
 RewriteRule ^/workshops/dhdw https://25sal.github.io/dhdw/dhdw.html
+RewriteRule ^/workshops/index.php/ccpi/ccpi25 https://25sal.github.io/dhdw/ccpi2025.html
 RewriteRule ^/workshops/index.php/ccpi/ccpi24
 RewriteRule ^/workshops/index.php/ccpi/ccpi23
 RewriteRule ^/workshops/index.php/swism/SWISM24
