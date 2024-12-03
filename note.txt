@@ -5,5 +5,5 @@ RewriteRule ^/workshops/index.php/ccpi/ccpi25 https://25sal.github.io/dhdw/ccpi2
 RewriteRule ^/workshops/ccpi https://25sal.github.io/dhdw/ccpi2025.html
 RewriteRule ^/workshops/index.php/ccpi/ccpi24
 RewriteRule ^/workshops/index.php/ccpi/ccpi23
-RewriteRule ^/workshops/index.php/swism/SWISM24
+RewriteRule ^/workshops/index.php/swism/SWISM25 https://25sal.github.io/dhdw/swism2025
 RewriteRule ^/workshops/index.php/swism/SWISM23
