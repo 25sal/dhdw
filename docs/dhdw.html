@@ -1,131 +1,183 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0067)https://parsec.unicampania.it/workshops/index.php/dhdw/dhdw24/index -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-	<title>2nd International Workshop on Digital Humanities and Digital World (DHDW)</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="generator" content="Open Conference Systems 2.3.3.1">
-	
-		<link rel="stylesheet" href="./dhdw/common.css" type="text/css">
-	<link rel="stylesheet" href="./dhdw/common(1).css" type="text/css">
-	
-	<script type="text/javascript" src="./dhdw/jquery.min.js"></script>
-	<script type="text/javascript" src="./dhdw/jqueryUi.min.js"></script>
-	<!-- Add javascript required for font sizer -->
-	<script type="text/javascript" src="./dhdw/jquery.cookie.js"></script>	
-	<script type="text/javascript" src="./dhdw/fontController.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			fontSize("#sizer", "body", 9, 16, 32, "https://parsec.unicampania.it/workshops"); // Initialize the font sizer
-		});
-	</script>
-	
-	
-	<link rel="stylesheet" href="./dhdw/sidebar.css" type="text/css">		<link rel="stylesheet" href="./dhdw/rightSidebar.css" type="text/css">	
-			<link rel="stylesheet" href="./dhdw/uncommon.css" type="text/css">
-			<link rel="stylesheet" href="./dhdw/jqueryUi.css" type="text/css">
-			<link rel="stylesheet" href="./dhdw/jquery.pnotify.default.css" type="text/css">
-			<link rel="stylesheet" href="./dhdw/pnotify.css" type="text/css">
-	
-	<script type="text/javascript" src="./dhdw/general.js"></script>
-	
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3rd International Workshop on Digital Humanities and Digital World (DHDW‑2026)</title>
+  <meta name="description" content="Colocated with AINA-2026 — Victoria University of Wellington, New Zealand. Call for Papers, Important Dates, Topics and Submission info." />
+  <style>
+    :root{--accent:#1b6ca8;--accent-2:#0ea5a4;--muted:#6b7280;--bg:#0f172a}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;line-height:1.45;margin:0;background:linear-gradient(180deg,#f7fbff 0%, #ffffff 40%);color:#0b1220}
+    header{display:flex;align-items:center;justify-content:space-between;padding:22px 6%;background:transparent}
+    .logo-row{display:flex;gap:20px;align-items:center}
+    .logo-row img{height:56px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:30px;padding:48px 6%;align-items:center}
+    .card{background:linear-gradient(180deg,#ffffff, #fbfeff);border-radius:16px;padding:26px;box-shadow:0 6px 24px rgba(12,38,63,0.08);}
+    h1{font-size:28px;margin:0 0 10px;color:var(--accent)}
+    h2{font-size:18px;margin:0 0 12px;color:#0b1220}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .meta{font-weight:600;color:#0b1220;margin-bottom:8px}
+    .dates{display:flex;gap:10px;flex-wrap:wrap}
+    .date-pill{background:linear-gradient(90deg,#eef9ff,#f7fdfc);padding:10px 14px;border-radius:10px;border:1px solid #d9eef6;color:#044e6f;font-weight:600}
+    .cta-row{margin-top:18px;display:flex;gap:12px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-outline{border:2px solid var(--accent);color:var(--accent);background:transparent}
+    main{padding:18px 6% 60px}
+    .grid-2{display:grid;grid-template-columns:1fr 380px;gap:28px}
+    ul.topics{columns:2;gap:12px;padding-left:18px}
+    .panel{background:white;padding:18px;border-radius:12px;border:1px solid #eef3f7}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px 8px;border-bottom:1px solid #eef3f7;text-align:left}
+    th{background:#fbfdff;font-weight:700}
+    footer{padding:24px 6%;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(180deg,#fbfdff,#f6fbff);border-top:1px solid #eef3f7}
+    .logos-small img{height:42px;margin-left:14px}
+    .blink{animation:blink 2s linear infinite}
+    @keyframes blink{0%{opacity:1}50%{opacity:0.5}100%{opacity:1}}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.grid-2{grid-template-columns:1fr}.logo-row img{height:46px}.logos-small img{height:36px}}
+  </style>
 </head>
-<body >
-<div id="container" >
-<div id="header">
-<div id="headerTitle">
-</div>
-</div>
+<body>
+  <header>
+    <div class="logo-row">
+      <!-- Replace src with your actual logo files -->
+      <img src="/assets/logos/dhdw-logo.png" alt="DHDW logo" onerror="this.style.display='none'"/>
+      <div>
+        <div style="font-size:14px;color:var(--muted)">3rd International Workshop on</div>
+        <div style="font-weight:800;font-size:16px;color:#0b1220">Digital Humanities &amp; Digital World (DHDW‑2026)</div>
+      </div>
+    </div>
+    <div class="logo-row" style="opacity:0.95">
+      <img src="/assets/logos/aina-logo.png" alt="AINA logo" onerror="this.style.display='none'"/>
+      <img src="/assets/logos/vuw-logo.png" alt="Victoria University of Wellington" onerror="this.style.display='none'"/>
+    </div>
+  </header>
 
-<div id="body" style="position: absolute;left:100px">
+  <section class="hero">
+    <div>
+      <div class="card">
+        <h1>Colocated with The 40th International Conference on Advanced Information Networking and Applications (AINA‑2026)</h1>
+        <h2>Victoria University of Wellington, New Zealand — April 8–10, 2026</h2>
+        <p class="lead">DHDW‑2026 explores intersections between Digital Humanities and state‑of‑the‑art digital technologies. We invite original research, case studies, tool descriptions, and position papers that demonstrate how computational methods reshape scholarship, preservation, storytelling and public engagement.</p>
 
+        <div class="meta">Important Dates</div>
+        <div class="dates">
+          <div class="date-pill">Submission deadline: <strong>Nov 15, 2025</strong></div>
+          <div class="date-pill">Authors notification: <strong>Jan 10, 2026</strong></div>
+          <div class="date-pill">Author registration &amp; camera‑ready: <strong>Jan 25, 2026</strong></div>
+          <div class="date-pill">Workshop: <strong>Apr 8–10, 2026</strong></div>
+        </div>
 
-<div id="main">
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#call">Call for Papers</a>
+          <a class="btn btn-outline" href="#submission">Submit (EDAS)</a>
+        </div>
+      </div>
+    </div>
 
-<h2>3rd International Workshop on Digital Humanities and Digital World (DHDW)</h2>
+    <aside>
+      <div class="card" style="text-align:center">
+        <h2 style="margin-bottom:6px">Why submit?</h2>
+        <p style="color:var(--muted)">High visibility, interdisciplinary audience, Springer LNCS proceedings and indexing.</p>
+        <div style="margin-top:12px">
+          <a class="btn btn-primary" href="#publication">Publication</a>
+        </div>
+        <hr style="margin:18px 0;border:none;border-top:1px solid #eef6fb"/>
+        <div style="text-align:left">
+          <strong>Organizers</strong>
+          <p style="margin:6px 0;color:var(--muted)">Alba Amato — Università degli Studi della Campania “Luigi Vanvitelli"</p>
+          <p style="margin:6px 0;color:var(--muted)">Local Chairs &amp; Program Committee — see page for full list</p>
+        </div>
+      </div>
+    </aside>
+  </section>
 
+  <main>
+    <div class="grid-2">
+      <section class="panel">
+        <h2 id="call">Call for Papers</h2>
+        <p>We invite submissions that advance Digital Humanities research and practice through computational techniques, design methods, and critical inquiry. We especially welcome work that bridges technical innovation and humanities impact, including collaborative projects with archives, museums, cultural institutions, and local communities.</p>
 
-<div id="content">
+        <h3 style="margin-top:12px">Expanded Topics (selected)</h3>
+        <ul class="topics">
+          <li>Annotating, archiving and sustainable preservation of cultural heritage</li>
+          <li>Computational text analysis, NLP for historical corpora, stylometry</li>
+          <li>Linked Open Data, ontologies and semantic enrichment for humanities resources</li>
+          <li>Machine learning for image, audio, and multimodal cultural analysis</li>
+          <li>3D reconstruction, photogrammetry and virtual repatriation</li>
+          <li>Interactive exhibitions, museum UX and digital storytelling</li>
+          <li>XR, immersive heritage experiences and accessibility in digital exhibitions</li>
+          <li>Digital pedagogy, learning analytics and open educational resources</li>
+          <li>Computational social science, network analysis and cultural analytics</li>
+          <li>Crowdsourcing, participatory archives and citizen humanities</li>
+          <li>Ethics, privacy, bias and governance of AI in cultural heritage</li>
+          <li>Preservation pipelines, digitization workflows and metadata strategies</li>
+          <li>Digital editions, scholarly editing and reproducible humanities research</li>
+          <li>Tools, platforms, and reproducible workflows for DH projects</li>
+          <li>AI assisted curation, provenance, and digital conservation techniques</li>
+        </ul>
 
+        <p style="margin-top:12px;color:var(--muted)"><strong>Note:</strong> the workshop encourages submissions that demonstrate clear humanities impact, replicable methodologies, and thoughtful ethical reflection. We particularly welcome submissions that are co‑authored with cultural institutions or that include public-facing outcomes.</p>
 
-<h2>Open University of Catalonia, Barcelona, Spain - From April 9 to April 11, 2025</h2>
+        <h3 id="submission" style="margin-top:14px">Submission Guidelines</h3>
+        <ul>
+          <li>Full papers: up to <strong>10 pages</strong> (plus 2 extra pages subject to fees) following the Springer LNCS template.</li>
+          <li>All submissions must be in PDF and uploaded to the EDAS submission system (link on the main AINA website).</li>
+          <li>Papers will be peer‑reviewed by the program committee. Accepted papers must be presented at the workshop to be published in the proceedings.</li>
+        </ul>
 
-<br>
+        <h3 id="publication" style="margin-top:14px">Publication</h3>
+        <p>Accepted papers will be published in the <strong>Springer Lecture Notes</strong> series alongside AINA‑2026 proceedings and indexed in major databases (EI, Scopus). Outstanding papers may be invited to extended special issues in reputable journals.</p>
 
-<div><img class="center-fit" src="./dhdw/logos.jpg" alt=""><p>&nbsp;</p><p style="font-size: 18px;">For any submission problem, please send an email to:&nbsp;<strong>alba.amato@unicampania.it</strong></p><p style="font-size: 18px;">
-	<br>Colocated with<a href="http://voyager.ce.fit.ac.jp/conf/aina/2025/index.php" target="_blank"> </a>
-	The 39th International Conference on Advanced<br>Information Networking and Applications (AINA-2025)<br>Open University of Catalonia, Barcelona, Spain
-April 9 to April 11, 2025</p>
-<p style="font-size: 18px;">
-	<strong>Workshop Chair</strong></p><p style="font-size: 18px;"><strong>Alba Amato</strong><em>, Università degli Studi della Campania Luigi Vanvitelli, Italy</em>
-</p>
- <p style="font-size: 16px;width:800px;text-align:justify">The 2nd&nbsp; International Workshop on Digital Humanities (DHDW-2025) 
- will serve as a major forum for Academics, and industry researchers of new ideas, methods, 
- and research initiatives in the areas of Digital Humanities (DH). Digital Humanities are an emerging discipline
-  that deals with themes of humanistic research through new approaches and paradigms based on ICT (Information Communication Technology) tools.
-   DH lead to new approaches focusing on the dialogue between computer science and humanities studies. 
-   The goal of this workshop is to discuss and promote the research and development of research which lies at the intersection of these two area.
-    Participants are invited to present their innovative work in the workshop in all areas of Digital Humanities such as, but not limited to the following areas:</p>
- <ul style="font-size: 16px;">
-	 <li>Annotating Archiving and Artifacts</li><li>Social Media and Crowdsourcing</li>
- <li>Digital History. Archives and Digital Publishing</li>
- <li>Documentation. Digital Storytelling and Exhibitions</li>
- <li>Emulation</li>
- <li>Encoding</li>
- <li>Experience Architecture</li>
- <li>Gamification </li>
- <li>Extended Reality and Games</li>
- <li>Images and 3D Images, 3D Modeling / Visualization· </li>
- <li>Information Retrieval </li>
- <li>Instructional Design </li>
- <li>Language </li>
- <li>Learning Analytics </li>
- <li>Linked Open Data </li><li>Machine Learning </li>
- <li>Metadata Management </li><li>Theoretical and Critical Approaches for DH</li></ul> 
- <p style="font-size: 18px;">
-	 <strong>IMPORTANT DATES</strong>
-	 </p>
-	 <table border="0" cellspacing="5" cellpadding="0" width="800">
-		 <tbody>
-			 <tr><td>
-				 <table border="0" cellspacing="5" cellpadding="0" width="800" style="font-size: 18px;">
-					 <tbody>
-						 <tr><td valign="top">Paper Submission Deadline</td><td class="value"><strike>November 5, 2024</strike> December 25, 2024</td></tr>
-						 <tr><td>Author Notification</td><td class="value">January 10, 2025</td></tr>
-						 <tr><td>Final Manuscript Due</td><td class="value">January 25, 2025</td></tr>
-						 <tr><td>Author Registration</td><td class="value">January 25, 2025</td></tr>
-						 <tr><td>Conference Dates</td><td class="value">April 9 - April 11, 2025</td></tr>
-					 </tbody>
-				  </table>
-				  </td>
-				  <td class="value"><br></td></tr><tr><td valign="top"><br></td><td class="value"><br></td></tr>
-			  <tr><td><h3 class="western"><em>Paper Submission Guidelines:</em></h3><p style="font-size: 18px;  text-align: justify">Workshop  papers should be maximum 10 pages long. However, authors can add up to 2  extra pages with the appropriate fee payment. Papers must be prepared  using the Lecture Notes Style of Springer Proceedings (Please download  from&nbsp;
-			  <a href="http://voyager.ce.fit.ac.jp/conftools/Springer/For-the-authors-LECTURE-NOTES-TEMPLATES.zipURE-NOTES-TEMPLATES.zip">HERE</a>), and must be formatted in PDF format.</p><p style="font-size: 18px;">Please submit to:</p>
-			  <p style="font-size: 18px;"><a href="https://edas.info/N32463">https://edas.info/N32463</a></p>
-				<p style="font-size: 18px;">Further information are available at</p>
-			    <p style="font-size: 18px;"><a href="http://voyager.ce.fit.ac.jp/conf/aina/2025/guidelines.php">http://voyager.ce.fit.ac.jp/conf/aina/2025/guidelines.php</a></p>
-			    <p style="font-size: 18px;">&nbsp;</p><h3 class="western"><em>Publication of Papers:</em></h3>
-			    <p style="font-size: 18px;text-align: justify">All  accepted papers will be included in conference proceedings of Lecture  Notes series published by Springer. 
-			      Proceedings will be sent by Springer  for indexing in EI and SCOPUS.  
-			      Presented papers at AINA-2025 will be considered for publication in some  Special Issues in International Journals.</p>
-			      <p style="font-size: 18px;text-align: justify">Prepare your paper in PDF file (Adobe format), and submit it electronically to the EDAS online submission system.</p>
-			      <p style="font-size: 18px;">Proceedings of the conference will be published in Springer Series "Lecture Notes in Networks and Systems" <a href="https://www.springer.com/series/15362">https://www.springer.com/series/15362</a></p>
+      </section>
 
-					<p style="font-size: 18px;text-align: justify"><em>Accepted  papers will be given guidelines in preparing and submitting the final  manuscript(s) together with the notification of acceptance.&nbsp;Authors of  accepted papers, or at least one of them, are&nbsp; requested to register and  present their work at the conference, otherwise their papers will be  removed from the digital library after the conference.</em></p></td><td class="value"><br></td></tr><tr><td><br></td><td class="value"><br></td></tr><tr><td><br></td> <td class="value"><br></td></tr> <tr><td><br></td> <td class="value"><br></td></tr></tbody></table><br></div>
+      <aside class="panel">
+        <h2>Important Dates</h2>
+        <table>
+          <thead><tr><th>Event</th><th>Date</th></tr></thead>
+          <tbody>
+            <tr><td>Submission deadline</td><td>November 15, 2025</td></tr>
+            <tr><td>Authors notification</td><td>January 10, 2026</td></tr>
+            <tr><td>Author registration &amp; camera‑ready</td><td>January 25, 2026</td></tr>
+            <tr><td>Workshop dates</td><td>April 8–10, 2026</td></tr>
+          </tbody>
+        </table>
 
+        <div style="margin-top:14px">
+          <h3>Quick Links</h3>
+          <p style="margin:6px 0"><a class="btn btn-primary" href="#submission">Submit (EDAS)</a></p>
+          <p style="margin:6px 0"><a class="btn btn-outline" href="mailto:alba.amato@unicampania.it">Contact Organizers</a></p>
+          <p style="margin:6px 0"><a class="btn" style="background:#fff;border:1px solid #e6eef6;color:var(--accent)" href="#">Call For Papers (PDF)</a></p>
+        </div>
 
-<br>
+        <div style="margin-top:18px;font-size:13px;color:var(--muted)">
+          <strong>Venue</strong>
+          <p style="margin:6px 0">Victoria University of Wellington, New Zealand</p>
+          <strong>Colocated</strong>
+          <p style="margin:6px 0">AINA‑2026 — April 8–10, 2026</p>
+        </div>
+      </aside>
+    </div>
 
+    <section style="margin-top:22px" class="panel">
+      <h2>Program Chairs &amp; Committee</h2>
+      <p style="color:var(--muted)">Program chairs, local organizers and the full program committee will be listed on the final site. If you are interested in serving on the PC, please contact the organizers.</p>
+    </section>
 
+  </main>
 
+  <footer>
+    <div style="display:flex;align-items:center;gap:14px">
+      <div style="font-weight:700">DHDW‑2026</div>
+      <div style="color:var(--muted)">Colocated with AINA‑2026 • Victoria University of Wellington</div>
+    </div>
+    <div class="logos-small">
+      <!-- small logos: replace src with real paths -->
+      <img src="/assets/logos/vuw-small.png" alt="VUW" onerror="this.style.display='none'"/>
+      <img src="/assets/logos/aina-small.png" alt="AINA" onerror="this.style.display='none'"/>
+    </div>
+  </footer>
 
-
-</div><!-- content -->
-</div><!-- main -->
-</div><!-- body -->
-
-
-
-</div><!-- container -->
-</body></html>
+</body>
+</html>
