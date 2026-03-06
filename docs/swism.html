@@ -1,314 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>16th Semantic Web/Cloud and Intelligent Systems Management (SWISM)</title>
 
-    <meta name="description" content="Semantic Web/Cloud and Intelligent Systems Management">
-    <meta name="keywords" content="Semantic Web, Cloud Computing, Edge Computing, Artificial Intelligence, Workshop">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-    <!-- Legacy OCS styles -->
-    <link rel="stylesheet" href="./dhdw/common.css">
-    <link rel="stylesheet" href="./dhdw/sidebar.css">
-    <link rel="stylesheet" href="./dhdw/rightSidebar.css">
-    <link rel="stylesheet" href="./dhdw/uncommon.css">
-    <link rel="stylesheet" href="./dhdw/jqueryUi.css">
+<title>16th Semantic Web/Cloud and Intelligent Systems Management (SWISM)</title>
 
-    <!-- Modern font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Semantic Web/Cloud and Intelligent Systems Management">
+<meta name="keywords" content="Semantic Web, Cloud Computing, Edge Computing, Artificial Intelligence, Workshop">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Legacy JS -->
-    <script src="./dhdw/jquery.min.js"></script>
-    <script src="./dhdw/jqueryUi.min.js"></script>
+<link rel="stylesheet" href="./dhdw/common.css">
+<link rel="stylesheet" href="./dhdw/sidebar.css">
+<link rel="stylesheet" href="./dhdw/rightSidebar.css">
+<link rel="stylesheet" href="./dhdw/uncommon.css">
+<link rel="stylesheet" href="./dhdw/jqueryUi.css">
 
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.65;
-            color: #222;
-            background-color: #fafafa;
-            overflow-x: hidden;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        #body {
-            margin-left: 100px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 20px;
-        }
+<script src="./dhdw/jquery.min.js"></script>
+<script src="./dhdw/jqueryUi.min.js"></script>
 
-        .hero {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: #fff;
-            padding: 40px 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
+<style>
 
-        .hero h1 {
-            margin: 0;
-            font-size: 32px;
-            font-weight: 700;
-        }
+body{
+font-family:'Inter',sans-serif;
+line-height:1.65;
+color:#222;
+background:#fafafa;
+overflow-x:hidden;
+}
 
-        .hero p {
-            margin-top: 10px;
-            font-size: 18px;
-            font-weight: 300;
-        }
+#body{
+margin-left:100px;
+}
 
-        .section {
-            margin: 45px 0;
-        }
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
 
-        .section h2 {
-            border-left: 6px solid #2a5298;
-            padding-left: 12px;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+.hero{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+color:white;
+padding:40px;
+border-radius:10px;
+margin-bottom:30px;
+}
 
-        .center-fit {
-            max-width: 100%;
-            display: block;
-            margin: 25px auto;
-        }
+.hero h1{
+margin:0;
+font-size:32px;
+font-weight:700;
+}
 
-        .topics {
-            columns: 2;
-            column-gap: 40px;
-            font-size: 16px;
-        }
+.hero p{
+font-size:18px;
+margin-top:10px;
+}
 
-        .topics li {
-            margin-bottom: 10px;
-        }
+.section{
+margin:45px 0;
+}
 
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            font-size: 16px;
-        }
+.section h2{
+border-left:6px solid #2a5298;
+padding-left:12px;
+font-size:24px;
+margin-bottom:20px;
+}
 
-        table td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
+.center-fit{
+max-width:100%;
+display:block;
+margin:25px auto;
+}
 
-        .submission-note {
-            font-size: 18px;
-            font-weight: bold;
-            color: #b00020;
-            text-align: center;
-            margin: 25px 0;
-        }
+/* CHAIRS GRID */
 
-        .cta {
-            display: inline-block;
-            background: #2a5298;
-            color: #fff;
-            padding: 14px 28px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-        }
+.chair-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:30px;
+margin-top:20px;
+}
 
-        .cta:hover {
-            background: #1e3c72;
-        }
+.chair{
+text-align:center;
+}
 
-        .contact {
-            font-size: 17px;
-            text-align: center;
-            margin-top: 40px;
-        }
-    </style>
+.chair img{
+width:160px;
+height:160px;
+object-fit:cover;
+border-radius:10px;
+box-shadow:0px 3px 8px rgba(0,0,0,0.2);
+margin-bottom:10px;
+}
+
+.chair strong{
+display:block;
+font-size:16px;
+}
+
+.chair span{
+font-size:14px;
+color:#555;
+}
+
+/* TOPICS */
+
+.topics{
+columns:2;
+column-gap:40px;
+font-size:16px;
+}
+
+.topics li{
+margin-bottom:10px;
+}
+
+table{
+border-collapse:collapse;
+width:100%;
+font-size:16px;
+}
+
+table td{
+padding:10px;
+border-bottom:1px solid #ddd;
+}
+
+.cta{
+display:inline-block;
+background:#2a5298;
+color:white;
+padding:14px 28px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+}
+
+.cta:hover{
+background:#1e3c72;
+}
+
+</style>
+
 </head>
 
+
 <body>
+
 <div id="container">
-    <main id="body">
-        <div class="container">
 
-            <!-- HERO -->
-            <div class="hero">
-                <h1>16th Semantic Web / Cloud-Edge Information and Services Management (SWISM)</h1>
-                <p>
-                    University of Luxembourg, Luxembourg<br>
-                    July 1 – July 3, 2026<br>
-                    Co-located with the 20th International Conference on Complex, Intelligent, and Software Intensive Systems (CISIS-2026)
-                </p>
-            </div>
+<main id="body">
 
-            <img class="center-fit" src="./dhdw/logoCISIS.png" alt="CISIS Conference Logo">
+<div class="container">
 
-            <!-- CONTACT -->
-            <section class="section">
-                <h2>Contact</h2>
-                <p>
-                    For any submission problem, please contact:<br>
-                    <strong>beniamino.dimartino@unicampania.it</strong>,
-                    <strong>antonio.esposito@unicampania.it</strong>,
-                    <strong>luigi.coluccicante@unicampania.it</strong>,
-                    <strong>mariangela.graziano@unicampania.it</strong>
-                </p>
-            </section>
 
-            <!-- ORGANIZATION -->
-            <section class="section">
-                <h2>Organization</h2>
+<div class="hero">
 
-                <p><strong>Workshop Chair</strong><br>
-                    Beniamino Di Martino,
-                    <em>Università degli Studi della Campania Luigi Vanvitelli, Italy</em>
-                </p>
+<h1>16th Semantic Web / Cloud-Edge Information and Services Management (SWISM)</h1>
 
-                <p><strong>Workshop Co-Chairs</strong><br>
-                    Antonio Esposito, Luigi Colucci Cante, Mariangela Graziano,
-                    <em>Università degli Studi della Campania Luigi Vanvitelli, Italy</em>
-                </p>
-            </section>
+<p>
+University of Luxembourg, Luxembourg<br>
+July 1 – July 3, 2026<br>
+Co-located with the 20th International Conference on Complex, Intelligent, and Software Intensive Systems (CISIS-2026)
+</p>
 
-            <!-- PROGRAM COMMITTEE -->
-            <section class="section">
-                <h2>Program Committee Members</h2>
-                <p>
-                    Flora Amato, University of Naples “Federico II”, Italy<br>
-                    Rocco Aversa, University of Campania “Luigi Vanvitelli”, Italy<br>
-                    Raj Buyya, The University of Melbourne, Australia<br>
-                    Siegfred Benkner, University of Vienna, Austria<br>
-                    Marios Dikaiakos, University of Cyprus, Cyprus<br>
-                    Jack Dongarra, University of Tennessee, USA<br>
-                    Giuseppe Ferretti, Campania Regional Government, Italy<br>
-                    Ian Foster, Argonne National Laboratory, USA<br>
-                    Robert Hsu, Asia University, Taiwan<br>
-                    Dieter Kranzlmüller, Ludwig Maximilian University of Munich, Germany<br>
-                    Craig Lee, Aerospace Corporation, USA<br>
-                    Luan-Ching Li, Providence University, Taiwan<br>
-                    Ignacio Llorente, Universidad Complutense de Madrid, Spain<br>
-                    Vincenzo Loia, University of Salerno, Italy<br>
-                    Fiammetta Marulli, University of Campania “Luigi Vanvitelli”, Italy<br>
-                    Antonino Mazzeo, University of Naples “Federico II”, Italy<br>
-                    Francesco Moscato, University of Salerno, Italy<br>
-                    Thierry Priol, Inria, France<br>
-                    Dana Petcu, University of Timisoara, Romania<br>
-                    Omer Rana, Cardiff University, UK<br>
-                    Domenico Talia, University of Calabria, Italy<br>
-                    Maria Tsakali, European Commission, Belgium<br>
-                    Salvatore Venticinque, University of Campania “Luigi Vanvitelli”, Italy<br>
-                    Laurence Yang, St. Francis Xavier University, Canada<br>
-                    Hans Zima, JPL NASA / University of Vienna, Austria
-                </p>
-            </section>
-
-            <!-- DESCRIPTION -->
-            <section class="section">
-                <h2>Workshop Scope</h2>
-                <p style="max-width: 900px; text-align: justify;">
-                    The Semantic Web/Cloud Intelligent Systems Management workshop brings together researchers and practitioners
-                    to exchange ideas and results on intelligent methods applied to Web- and Cloud-based systems.
-                    All accepted papers will be published in the Springer Lecture Notes in Data Engineering and Communication Technologies
-                    series and indexed by EI and SCOPUS.
-                    The workshop particularly encourages contributions addressing the convergence of Semantic Web technologies,
-                    Cloud–Edge computing, and Artificial Intelligence, with a strong focus on real-world systems and applications.
-                </p>
-            </section>
-
-            <!-- TOPICS -->
-            <section class="section">
-                <h2>Topics of Interest</h2>
-                <ul class="topics">
-                    <li>Semantic Web and Knowledge Graphs for Cloud–Edge–AI Systems</li>
-                    <li>Cloud–Edge–IoT Continuum Architectures and Programming Models</li>
-                    <li>AI-Driven Cloud and Service Management</li>
-                    <li>Large Language Models and Generative AI for Service Discovery, Composition, and Management</li>
-                    <li>Semantic Interoperability and Data Spaces</li>
-                    <li>Intelligent Service Discovery, Brokering, and Orchestration</li>
-                    <li>Autonomous Agents and Multi-Agent Systems for Distributed Environments</li>
-                    <li>Knowledge Management and Reasoning in Cloud and Edge Systems</li>
-                    <li>Process Mining and Intelligent Business Process Management</li>
-                    <li>Service-Level Agreements, QoS, and Trust Management</li>
-                    <li>Explainable, Trustworthy, and Responsible AI for Cloud Services</li>
-                    <li>Natural Language Processing for Cloud and Web-Based Systems</li>
-                    <li>Security, Privacy, and Compliance in Semantic and AI-Enabled Clouds</li>
-                    <li>Sustainable and Energy-Aware Cloud and Edge Computing</li>
-                    <li>Edge Intelligence and On-device Learning</li>
-<li>Distributed Artificial Intelligence Systems</li>
-<li>Federated Learning and Privacy-Preserving AI</li>
-<li>Collaborative Intelligence in Edge-Cloud Continuum</li>
-<li>AI-driven Generation of Mixed Reality (MR/AR/VR) Virtual Worlds</li>
-                    <li>Real-World Applications and Industrial Use Cases</li>
-                </ul>
-            </section>
-
-            <!-- SUBMISSION -->
-            <section class="section">
-                <h2>Submission</h2>
-                <p>
-                    To those interested in submitting a paper, please fill in the form below.
-                </p>
-                <p>
-                    <a class="cta" href="https://forms.gle/MKCnpaJ2T73XM9hXA" target="_blank">
-                        Manifest your interest here
-                    </a>
-                </p>
-            </section>
-
-            <!-- DATES -->
-            <section class="section">
-                <h2>Important Dates</h2>
-                <table>
-                    <tr><td><strong>Submission deadline</strong></td><td>March 10, 2026</td></tr>
-                    <tr><td><strong>Notification of acceptance</strong></td><td>April 10, 2026</td></tr>
-                    <tr><td><strong>Camera-ready & registration</strong></td><td>April 25, 2026</td></tr>
-                    <tr><td><strong>Workshop dates</strong></td><td>July 1 – July 3, 2026</td></tr>
-                </table>
-            </section>
-
-            <!-- GUIDELINES -->
-            <section class="section">
-                <h2>Paper Submission Guidelines</h2>
-                <p>
-                    Papers must be up to 10 pages, with up to 2 additional pages allowed with extra fees.
-                    Submissions must follow the Springer Lecture Notes template and be in PDF format.
-                </p>
-                <p>
-                    Submit via EDAS:
-                    <a href="https://edas.info/newPaper.php?c=34245&track=133123" target="_blank">
-                        https://edas.info/newPaper.php?c=34245&track=133123
-                    </a>
-                </p>
-                <p>
-                    Author guidelines:
-                    <a href="http://voyager.ce.fit.ac.jp/conf/cisis/2026/guidelines.php" target="_blank">
-                        http://voyager.ce.fit.ac.jp/conf/cisis/2026/guidelines.php
-                    </a>
-                </p>
-            </section>
-
-            <!-- PUBLICATION -->
-            <section class="section">
-                <h2>Publication of Papers</h2>
-                <p>
-                    All accepted and presented papers will be published in Springer Lecture Notes series and submitted
-                    for indexing in EI and SCOPUS.
-                </p>
-                <p>
-                    Springer Series:
-                    <a href="https://www.springer.com/series/15362" target="_blank">
-                        Lecture Notes in Networks and Systems
-                    </a>
-                </p>
-            </section>
-
-        </div>
-    </main>
 </div>
+
+
+<img class="center-fit" src="./dhdw/logoCISIS.png">
+
+
+<section class="section">
+
+<h2>Contact</h2>
+
+<p>
+
+For any submission problem please contact:<br>
+
+<strong>beniamino.dimartino@unicampania.it</strong><br>
+<strong>antonio.esposito@unicampania.it</strong><br>
+<strong>luigi.coluccicante@unicampania.it</strong><br>
+<strong>mariangela.graziano@unicampania.it</strong>
+
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2>Organization</h2>
+
+<h3>Workshop Chair</h3>
+
+<div class="chair-grid">
+
+<div class="chair">
+<img src="images/dimartino.jpg">
+<strong>Beniamino Di Martino</strong>
+<span>University of Campania Luigi Vanvitelli, Italy</span>
+</div>
+
+</div>
+
+
+<h3 style="margin-top:35px;">Workshop Co-Chairs</h3>
+
+<div class="chair-grid">
+
+<div class="chair">
+<img src="images/esposito.jpg">
+<strong>Antonio Esposito</strong>
+<span>University of Campania Luigi Vanvitelli, Italy</span>
+</div>
+
+<div class="chair">
+<img src="images/colucci.jpg">
+<strong>Luigi Colucci Cante</strong>
+<span>University of Campania Luigi Vanvitelli, Italy</span>
+</div>
+
+<div class="chair">
+<img src="images/graziano.jpg">
+<strong>Mariangela Graziano</strong>
+<span>University of Campania Luigi Vanvitelli, Italy</span>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Program Committee Members</h2>
+
+<p>
+
+Flora Amato, University of Naples “Federico II”, Italy<br>
+Rocco Aversa, University of Campania “Luigi Vanvitelli”, Italy<br>
+Raj Buyya, University of Melbourne, Australia<br>
+Siegfried Benkner, University of Vienna, Austria<br>
+Marios Dikaiakos, University of Cyprus, Cyprus<br>
+Jack Dongarra, University of Tennessee, USA<br>
+Giuseppe Ferretti, Campania Regional Government, Italy<br>
+Ian Foster, Argonne National Laboratory, USA<br>
+Robert Hsu, Asia University, Taiwan<br>
+Dieter Kranzlmüller, Ludwig Maximilian University of Munich, Germany<br>
+Craig Lee, Aerospace Corporation, USA<br>
+Kuan-Ching Li, Providence University, Taiwan<br>
+Ignacio Llorente, Universidad Complutense de Madrid, Spain<br>
+Vincenzo Loia, University of Salerno, Italy<br>
+Fiammetta Marulli, University of Campania “Luigi Vanvitelli”, Italy<br>
+Antonino Mazzeo, University of Naples “Federico II”, Italy<br>
+Francesco Moscato, University of Salerno, Italy<br>
+Thierry Priol, Inria, France<br>
+Dana Petcu, University of Timisoara, Romania<br>
+Omer Rana, Cardiff University, UK<br>
+Domenico Talia, University of Calabria, Italy<br>
+Maria Tsakali, European Commission, Belgium<br>
+Salvatore Venticinque, University of Campania “Luigi Vanvitelli”, Italy<br>
+Laurence Yang, St. Francis Xavier University, Canada<br>
+Hans Zima, NASA JPL / University of Vienna
+
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2>Workshop Scope</h2>
+
+<p style="max-width:900px;text-align:justify;">
+
+The Semantic Web/Cloud Intelligent Systems Management workshop brings together researchers and practitioners
+to exchange ideas and results on intelligent methods applied to Web- and Cloud-based systems.
+
+All accepted papers will be published in the Springer Lecture Notes in Data Engineering and Communication Technologies series and indexed by EI and SCOPUS.
+
+The workshop encourages contributions addressing the convergence of Semantic Web technologies,
+Cloud–Edge computing and Artificial Intelligence with a focus on real-world systems and applications.
+
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2>Topics of Interest</h2>
+
+<ul class="topics">
+
+<li>Semantic Web and Knowledge Graphs</li>
+<li>Cloud–Edge–IoT Continuum Architectures</li>
+<li>AI-Driven Cloud and Service Management</li>
+<li>Large Language Models for Service Discovery</li>
+<li>Semantic Interoperability and Data Spaces</li>
+<li>Service Brokering and Orchestration</li>
+<li>Autonomous Agents and Multi-Agent Systems</li>
+<li>Knowledge Management in Cloud Systems</li>
+<li>Process Mining</li>
+<li>Service-Level Agreements and QoS</li>
+<li>Explainable and Trustworthy AI</li>
+<li>NLP for Cloud Systems</li>
+<li>Security and Privacy in AI-enabled Clouds</li>
+<li>Sustainable Cloud and Edge Computing</li>
+<li>Edge Intelligence</li>
+<li>Distributed AI Systems</li>
+<li>Federated Learning</li>
+<li>Collaborative Edge-Cloud Intelligence</li>
+<li>AI-Generated Mixed Reality Worlds</li>
+<li>Industrial Applications</li>
+
+</ul>
+
+</section>
+
+
+<section class="section">
+
+<h2>Submission</h2>
+
+<p>To those interested in submitting a paper, please fill the form below.</p>
+
+<a class="cta" href="https://forms.gle/MKCnpaJ2T73XM9hXA" target="_blank">
+Manifest your interest here
+</a>
+
+</section>
+
+
+<section class="section">
+
+<h2>Important Dates</h2>
+
+<table>
+
+<tr>
+<td><strong>Submission deadline</strong></td>
+<td>March 10, 2026</td>
+</tr>
+
+<tr>
+<td><strong>Authors Notification</strong></td>
+<td>April 10, 2026</td>
+</tr>
+
+<tr>
+<td><strong>Author Registration</strong></td>
+<td>April 25, 2026</td>
+</tr>
+
+<tr>
+<td><strong>Final Manuscript</strong></td>
+<td>April 25, 2026</td>
+</tr>
+
+<tr>
+<td><strong>Conference Dates</strong></td>
+<td>July 1 – July 3, 2026</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<section class="section">
+
+<h2>Paper Submission Guidelines</h2>
+
+<p>
+
+Papers must be up to 12 pages long with a maximum of 2 extra pages allowed.
+
+Submissions must follow the Springer Lecture Notes template.
+
+</p>
+
+<p>
+
+Submit via EDAS:
+
+<a href="https://edas.info/newPaper.php?c=34245&track=133123" target="_blank">
+https://edas.info/newPaper.php?c=34245&track=133123
+</a>
+
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2>Publication</h2>
+
+<p>
+
+All accepted papers will be published in the Springer Lecture Notes series and submitted for indexing in EI and SCOPUS.
+
+</p>
+
+<p>
+
+Springer Series:
+
+<a href="https://www.springer.com/series/15362" target="_blank">
+Lecture Notes in Networks and Systems
+</a>
+
+</p>
+
+</section>
+
+
+</div>
+
+</main>
+
+</div>
+
 </body>
+
 </html>
