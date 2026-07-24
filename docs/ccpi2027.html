@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>18th International Workshop on Cloud-Edge Continuum Projects and Initiatives (CCPI)</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="Open Conference Systems 2.3.3.1">
+
+    <link rel="stylesheet" href="./dhdw/common.css" type="text/css">
+    <link rel="stylesheet" href="./dhdw/common(1).css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="./dhdw/jquery.min.js"></script>
+    <script type="text/javascript" src="./dhdw/jqueryUi.min.js"></script>
+    <script type="text/javascript" src="./dhdw/jquery.cookie.js"></script>
+    <script type="text/javascript" src="./dhdw/fontController.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            fontSize("#sizer", "body", 9, 16, 32, "https://parsec.unicampania.it/workshops");
+        });
+    </script>
+
+    <link rel="stylesheet" href="./dhdw/sidebar.css" type="text/css">
+    <link rel="stylesheet" href="./dhdw/rightSidebar.css" type="text/css">
+    <link rel="stylesheet" href="./dhdw/uncommon.css" type="text/css">
+    <link rel="stylesheet" href="./dhdw/jqueryUi.css" type="text/css">
+    <link rel="stylesheet" href="./dhdw/jquery.pnotify.default.css" type="text/css">
+    <link rel="stylesheet" href="./dhdw/pnotify.css" type="text/css">
+
+    <style>
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .center-fit {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        body,
+        p {
+            overflow-x: hidden;
+        }
+
+        .submission-note {
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .submission-link {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .ccpi-hero * { box-sizing: border-box; }
+        .ccpi-hero {
+            position: relative;
+            width: 100%;
+            max-width: 1700px;
+            min-height: 340px;
+            margin: 0 0 28px;
+            padding: 44px 5% 38px 4%;
+            background: linear-gradient(120deg, #061224 0%, #0B2340 45%, #123452 75%, #164060 100%);
+            overflow: hidden;
+            font-family: 'IBM Plex Sans', Arial, sans-serif;
+        }
+        .ccpi-hero .glow-a {
+            position: absolute; top: -160px; right: 40px;
+            width: 440px; height: 440px; border-radius: 50%;
+            background: radial-gradient(circle, rgba(56,189,248,0.16) 0%, rgba(56,189,248,0) 70%);
+        }
+        .ccpi-hero .glow-b {
+            position: absolute; bottom: -200px; right: 260px;
+            width: 480px; height: 480px; border-radius: 50%;
+            background: radial-gradient(circle, rgba(245,169,78,0.14) 0%, rgba(245,169,78,0) 70%);
+        }
+        .ccpi-hero .graph { position: absolute; top: 0; right: 0; width: 52%; height: 100%; opacity: 0.9; }
+        .ccpi-hero .content-inner { position: relative; z-index: 2; width: 60%; }
+        .ccpi-hero .eyebrow {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 13px; font-weight: 600; letter-spacing: 0.14em;
+            color: #7FD8F5; text-transform: uppercase; margin-bottom: 18px;
+        }
+        .ccpi-hero .eyebrow-mark { display: flex; align-items: center; gap: 4px; }
+        .ccpi-hero .eyebrow-mark span { width: 6px; height: 6px; border-radius: 50%; background: #38BDF8; display: block; }
+        .ccpi-hero .eyebrow-mark span:last-child { background: #F5A94E; }
+        .ccpi-hero .eyebrow-mark::before { content: ''; width: 18px; height: 1px; background: linear-gradient(90deg, #38BDF8, #F5A94E); }
+        .ccpi-hero h1 {
+            font-family: 'Sora', Arial, sans-serif;
+            font-weight: 700; font-size: clamp(22px, 2.5vw, 36px);
+            line-height: 1.22; color: #F3F7FA; letter-spacing: -0.01em; margin: 0;
+        }
+        .ccpi-hero h1 .tag {
+            display: block; margin-top: 6px; font-weight: 600;
+            font-size: 0.6em; color: #38BDF8; letter-spacing: 0.02em;
+        }
+        .ccpi-hero .rule {
+            width: 88px; height: 3px; margin: 20px 0 22px; border-radius: 2px;
+            background: linear-gradient(90deg, #38BDF8, #F5A94E);
+        }
+        .ccpi-hero .info {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+            font-size: 15px; color: #B9C6D6; margin: 0;
+        }
+        .ccpi-hero .info strong { color: #F3F7FA; font-weight: 600; }
+        .ccpi-hero .info .sep { color: #3E5670; }
+        .ccpi-hero .date-chip {
+            display: inline-flex; align-items: center; padding: 5px 14px; border-radius: 100px;
+            background: rgba(56,189,248,0.12); border: 1px solid rgba(56,189,248,0.35);
+            color: #7FD8F5; font-weight: 600; font-size: 14px;
+        }
+        .ccpi-hero .coloc {
+            margin-top: 22px; padding-top: 16px; border-top: 1px solid rgba(243,247,250,0.14);
+            font-size: 13.5px; color: #93A4B8;
+        }
+        .ccpi-hero .coloc a { color: #F5C687; font-weight: 600; text-decoration: none; }
+        .ccpi-hero .coloc a:hover { text-decoration: underline; }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="headerTitle">
+            </div>
+        </div>
+
+        <div id="body" style="position: absolute;left:100px">
+            <div id="main">
+                <div id="content">
+
+                    <div class="ccpi-hero">
+                        <div class="glow-a"></div>
+                        <div class="glow-b"></div>
+
+                        <svg class="graph" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke="#3E5670" stroke-width="1" opacity="0.5">
+                                <line x1="470" y1="60" x2="620" y2="50"/>
+                                <line x1="470" y1="60" x2="360" y2="110"/>
+                                <line x1="620" y1="50" x2="700" y2="120"/>
+                                <line x1="360" y1="110" x2="420" y2="200"/>
+                                <line x1="700" y1="120" x2="640" y2="210"/>
+                                <line x1="420" y1="200" x2="560" y2="240"/>
+                                <line x1="640" y1="210" x2="560" y2="240"/>
+                                <line x1="560" y1="240" x2="500" y2="330"/>
+                                <line x1="560" y1="240" x2="660" y2="330"/>
+                                <line x1="500" y1="330" x2="440" y2="400"/>
+                                <line x1="660" y1="330" x2="730" y2="400"/>
+                            </g>
+                            <circle cx="470" cy="60" r="6" fill="#38BDF8"/>
+                            <circle cx="620" cy="50" r="4" fill="#7FD8F5"/>
+                            <circle cx="360" cy="110" r="4" fill="#7FD8F5"/>
+                            <circle cx="700" cy="120" r="4" fill="#7FD8F5"/>
+                            <circle cx="420" cy="200" r="4" fill="#B9C6D6"/>
+                            <circle cx="640" cy="210" r="4" fill="#B9C6D6"/>
+                            <circle cx="560" cy="240" r="5" fill="#B9C6D6"/>
+                            <circle cx="500" cy="330" r="4" fill="#F5C687"/>
+                            <circle cx="660" cy="330" r="4" fill="#F5C687"/>
+                            <circle cx="440" cy="400" r="6" fill="#F5A94E"/>
+                            <circle cx="730" cy="400" r="6" fill="#F5A94E"/>
+                            <circle cx="470" cy="60" r="11" fill="none" stroke="#38BDF8" stroke-width="1" opacity="0.6"/>
+                            <circle cx="440" cy="400" r="11" fill="none" stroke="#F5A94E" stroke-width="1" opacity="0.6"/>
+                            <circle cx="730" cy="400" r="11" fill="none" stroke="#F5A94E" stroke-width="1" opacity="0.6"/>
+                        </svg>
+
+                        <div class="content-inner">
+                            <div class="eyebrow">
+                                <span class="eyebrow-mark"><span></span><span></span></span>
+                                18th edition &middot; international workshop
+                            </div>
+
+                            <h1>
+                                Cloud-Edge Continuum Projects and Initiatives
+                                <span class="tag">CCPI 2027</span>
+                            </h1>
+
+                            <div class="rule"></div>
+
+                            <p class="info">
+                                <strong>Polytechnic University of Tirana</strong>
+                                <span class="sep">&#183;</span>
+                                <span>Tirana, Albania</span>
+                                <span class="sep">&#183;</span>
+                                <span class="date-chip">Mar 24&ndash;26, 2027</span>
+                            </p>
+
+                            <p class="coloc">
+                                Colocated with <a href="https://voyager.ce.fit.ac.jp/conf/aina/2027/" target="_blank">the 41st International Conference on Advanced Information Networking and Applications (AINA-2027)</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img class="center-fit" src="./dhdw/logos.jpg" alt="">
+                        <p>&nbsp;</p>
+                        <p style="font-size: 18px;">For any submission problem, please send an email to:&nbsp;<strong>antonio.esposito@unicampania.it</strong></p>
+
+                        <p><strong>Workshop Chair</strong></p>
+                        <p><strong>Beniamino Di Martino</strong><em>, Università degli Studi della Campania Luigi Vanvitelli, Italy</em></p>
+                        <p><strong>Workshop Co-Chair</strong></p>
+                        <p><strong>Antonio Esposito</strong><em>, Università degli Studi della Campania Luigi Vanvitelli, Italy</em></p>
+
+                        <p><strong>Program Committee Members</strong></p>
+                        <p>Flora Amato University of Naples “Federico II", Italy<br />
+                            Rocco Aversa University of Campania “Luigi Vanvitelli", Italy<br />
+                            Raj Buyya The University of Melbourne, Australia<br />
+                            Siegfred Benkner University of Vienna, Austria<br />
+                            Marios Dikaiakos University of Cyprus, Cyprus<br />
+                            Jack Dongarra University of Tennessee, Texas, USA<br />
+                            Ian Foster Argonne National Laboratory, USA<br />
+                            Robert Hsu Asia University, Taiwan<br />
+                            Dieter Kranzlmueller University Ludwig Maximilian of Munich, Germany<br />
+                            Craig Lee Aerospace Corporation, USA<br />
+                            Luan-Ching Li Providence University, Taiwan<br />
+                            Ignacio Llorente Universidad Complutense de Madrid, Spain<br />
+                            Vincenzo Loia University of Salerno, Italy<br />
+                            Fiammetta Marulli University of Campania “Luigi Vanvitelli", Italy<br />
+                            Antonino Mazzeo University of Naples “Federico II", Italy<br />
+                            Francesco Moscato Università degli Studi di Salerno, Italy<br />
+                            Thierry Priol Inria, France<br />
+                            Dana Petcu University of Timisoara, Romania<br />
+                            Omer Rana Cardiff University, UK<br />
+                            Domenico Talia University of Calabria, Italy<br />
+                            Maria Tsakali European Commission, Belgium<br />
+                            Salvatore Venticinque University of Campania “Luigi Vanvitelli", Italy<br />
+                            Laurence Yang St. Francis Xavier University, Canada<br />
+                            Hans Zima JPL Nasa - USA/University of Vienna, Austria
+                        </p>
+
+                        <p style="font-size: 16px;width:800px;text-align:justify"><strong>Cloud-Edge continuum computing</strong><em> represents one of the most challenging technological fields both for academic and business. Several projects are contributing to its rapid development, witnessing the great interest of the research community on one side, and of the users on the other. The workshop aims to be a forum for exchanging ideas on different Cloud computing related topics and finding synergies between projects (especially EC-funded ones, but not only) tackling similar challenges. Getting insight in ongoing Cloud-related projects will facilitate the exchanges of information among the researchers and will enhance the communication of research results, avoiding unwanted duplication. Despite different backgrounds and challenging different issues, several topics are relevant for all projects and strengthen their cooperation, and joining the forces will hopefully be a valuable outcome of the CCPI Workshop, now at its 18th edition.</em></p>
+
+                        <p>Participants are invited to present their innovative work in the workshop in all areas of Digital Humanities such as, but not limited to the following areas:</p>
+
+                        <!-- The List of Topics Here -->
+                        <ul style="font-size: 16px;">
+                            <li>Cloud-Edge Architecture and Integration</li>
+                            <li>Security and Privacy in Cloud-Edge Environments</li>
+                            <li>Edge Computing Infrastructures and Services</li>
+                            <li>Cloud-Edge Applications and Use Cases</li>
+                            <li>Data Management in Cloud-Edge Systems</li>
+                            <li>Machine Learning and Artificial Intelligence at the Edge</li>
+                            <li>Performance Optimization in Cloud-Edge Continuum</li>
+                            <li>Economic Models and Business Strategies in Cloud-Edge Environments</li>
+                            <li>Cloud-Edge programming</li>
+                            <li>HPC and cluster at demand</li>
+                            <li>Cloud at home</li>
+                            <li>Cloud delivery models</li>
+                            <li>Cloud-Edge based applications</li>
+                            <li>Cloud middleware</li>
+                            <li>Cloud-Edge security</li>
+                            <li>Cloud-Edge Semantic</li>
+                            <li>Agents and Clouds</li>
+                            <li>Porting Software</li>
+                            <li>Applications and Data to Cloud</li>
+                            <li>Cloud Portability</li>
+                            <li>Other topics related to Cloud</li>
+                        </ul>
+
+                        <!-- Add Submission Note -->
+                        <p class="submission-note">To those interested in submitting a paper, please fill the form below: we will contact you for further information.</p>
+
+                        <!-- Link to Online Form -->
+                        <p class="submission-link">
+                            <a href="https://forms.gle/JHFDPykEGn2qFTag9" target="_blank">Manifest your interest here</a>
+                        </p>
+
+                        <p style="font-size: 18px;">
+                            <strong>IMPORTANT DATES</strong>
+                        </p>
+                        <table border="0" cellspacing="5" cellpadding="5" style="font-size: 16px;">
+                            <tbody>
+                                <tr>
+                                    <td width="220"><strong>Submission deadline</strong></td>
+                                    <td width="500"><strong>December 25, 2026</strong></td>
+                                </tr>
+                                <tr>
+                                    <td width="220"><strong>Authors notification</strong></td>
+                                    <td width="500"><strong>January 15, 2027</strong></td>
+                                </tr>
+                                <tr>
+                                    <td width="220"><strong>Author Registration and Camera Ready</strong></td>
+                                    <td width="500"><strong>January 31, 2027</strong></td>
+                                </tr>
+                                <tr>
+                                    <td width="220"><strong>Workshop date</strong></td>
+                                    <td width="500"><strong>March 24-26, 2027</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+ <h3 class="western"><em>Paper Submission Guidelines:</em></h3>
+                                        <p style="font-size: 18px; text-align: justify">Workshop papers should be maximum 10 pages long. However, authors can add up to 2 extra pages with the appropriate fee payment. Papers must be prepared using the Lecture Notes Style of Springer Proceedings (Please download from&nbsp;
+                                            <a href="http://voyager.ce.fit.ac.jp/conftools/Springer/For-the-authors-LECTURE-NOTES-TEMPLATES.zipURE-NOTES-TEMPLATES.zip">HERE</a>), and must be formatted in PDF format.
+                                        </p>
+                                        <p style="font-size: 18px;">Please submit to:</p>
+                                        <p style="font-size: 18px;"><a href="https://edas.info/newPaper.php?c=35435&amp;track=138452">https://edas.info/newPaper.php?c=35435&amp;track=138452</a></p>
+                                        <p style="font-size: 18px;">Further information is available at</p>
+                                        <p style="font-size: 18px;"><a href="https://voyager.ce.fit.ac.jp/conf/aina/2027/Papersummit">https://voyager.ce.fit.ac.jp/conf/aina/2027/Papersummit</a></p>
+                                        <p style="font-size: 18px;">&nbsp;</p>
+                                        <h3 class="western"><em>Publication of Papers:</em></h3>
+                                        <p style="font-size: 18px;text-align: justify">All accepted papers will be included in conference proceedings of Lecture Notes series published by Springer.
+                                            Proceedings will be sent by Springer for indexing in EI and SCOPUS.
+                                            Presented papers at AINA-2027 will be considered for publication in some Special Issues in International Journals.
+                                        </p>
+                                        <p style="font-size: 18px;text-align: justify">Prepare your paper in PDF file (Adobe format), and submit it electronically to the EDAS online submission system.</p>
+                                        <p style="font-size: 18px;">All accepted papers will be included in the conference proceedings of Lecture Notes in Data Engineering and Communication Technologies series published by Springer.<a href="https://www.springer.com/series/15362">https://link.springer.com/series/15362</a></p>
+
+                                        <p style="font-size: 18px;text-align: justify"><em>Accepted papers will be given guidelines in preparing and submitting the final manuscript(s) together with the notification of acceptance. Authors of accepted papers, or at least one of them, are requested to register and present their work at the conference, otherwise, their papers will be removed from the digital library after the conference.</em></p>
+                                    </td>
+                                    <td class="value"><br></td>
+                                </tr>
+                                <tr>
+                                    <td><br></td>
+                                    <td class="value"><br></td>
+                                </tr>
+                                <tr>
+                                    <td><br></td>
+                                    <td class="value"><br></td>
+                                </tr>
+                                <tr>
+                                    <td><br></td>
+                                    <td class="value"><br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                    </div>
+
+                    <br>
+                </div><!-- content -->
+            </div><!-- main -->
+        </div><!-- body -->
+    </div><!-- container -->
+</body>
+
+</html>
